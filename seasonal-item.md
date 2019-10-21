@@ -1,6 +1,6 @@
 ## Adding seasonal items
 1. Create 4 new tags for products in **Products** > **Tags**
-	Use Japanese Kanji character for seasons: 春 夏 秋 冬
+    Use Japanese Kanji character for seasons: 春 夏 秋 冬
 2. Link products with the tags
 3. Create a new content block with the following code:
 	```
@@ -273,5 +273,5 @@
 	```
 4. Navigate to **Contents** > **Layouts** > **トップページ用レイアウト**
 5. Drag and drop the newly created block into the main area:
-	![image](images/seasonal-item-block-position.png "Block Position")
+	![image](/images/seasonal-item-block-position.png "Block Position")
 
