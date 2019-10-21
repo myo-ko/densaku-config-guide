@@ -5,9 +5,9 @@
 2. Link products with the tags. *(optional)*
 3. Navigate to **Contents** > **Pages**
 4. Create a new page.
- - Page Name: Picked Up (ピックアップ) Page
- - URL: pick_up
- - File Name: pick_up
+    - Page Name: Picked Up (ピックアップ) Page
+    - URL: pick_up
+    - File Name: pick_up
 5. Add the following code:
 	```
 	{% set query = repository('Eccube\\Entity\\Product').createQueryBuilder('p').innerJoin('p.ProductTag','pt').innerJoin('pt.Tag','t').where('t.name = :tag').andWhere('p.Status = 1').setParameter('tag', 'ピックアップ').getQuery() %}
