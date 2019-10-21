@@ -1,5 +1,5 @@
 ## Adding seasonal items
-1. Create 4 new tags for products in **Products** > **Tags**
+1. Create 4 new tags for products in **Products** > **Tags**<br>
     Use Japanese Kanji character for seasons: 春 夏 秋 冬
 2. Link products with the tags
 3. Create a new content block with the following code:
