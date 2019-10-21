@@ -98,6 +98,69 @@
 4. Modify their `href` attribute as follows:
     - Pick-up products link : `href="{{ url('user_data',{'route':'pick_up'}) }}"`
     - Gift products link : `href="{{ url('user_data',{'route':'gift'}) }}"`
-5. Save the changes.
-6. Verify that **カテゴリ** block is in Top Page Layout. <br>
+5. Full code:
+	```
+	{#
+	This file is part of EC-CUBE
+
+	Copyright(c) LOCKON CO.,LTD. All Rights Reserved.
+
+	http://www.lockon.co.jp/
+
+	For the full copyright and license information, please view the LICENSE
+	file that was distributed with this source code.
+	#}
+	<style>
+		.ec-categoryRole {
+			background: #fff;
+		}
+		@media only screen and (max-width: 767px){
+			.ec-categoryRole .ec-categoryRole__listItem{
+				width: 50%;
+			}
+			.ec-categoryRole .ec-categoryRole__listItem a{
+				display: inline-block;
+				width: 95%;
+			}
+			.ec-categoryRole .ec-categoryRole__listItem:nth-child(even){
+				text-align: right;
+			}
+		}
+		
+	</style>
+
+	<div class="ec-categoryRole">
+		<div class="ec-role">
+			<div class="ec-secHeading">
+				{#<span class="ec-secHeading__en">{{ 'CATEGORY'|trans }}</span>#}
+				{#<span class="ec-secHeading__line"></span>#}
+				<span class="ec-secHeading__en">{{ 'カテゴリ'|trans }}</span>
+			</div>
+			<div class="ec-categoryRole__list">
+				<div class="ec-categoryRole__listItem">
+					<a href="{{ url('user_data',{'route':'pick_up'}) }}">
+						<img src="{{ asset('assets/img/category/img_top_bna_pickup.jpg') }}">
+					</a>
+				</div>
+				<div class="ec-categoryRole__listItem">
+					<a href="{{ url('user_data',{'route':'gift'}) }}">
+						<img src="{{ asset('assets/img/category/img_top_bna_gift.jpg') }}">
+					</a>
+				</div>
+				<div class="ec-categoryRole__listItem">
+					<a href="http://renew.den-saku.com/supplierdensaku/public/jobSearch">
+						<img src="{{ asset('assets/img/category/img_top_bna_recruit.jpg') }}">
+					</a>
+				</div>
+				<div class="ec-categoryRole__listItem">
+					<a href="#" target="_blank">
+						<img src="{{ asset('assets/img/category/img_default.jpg') }}">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	```
+6. Save the changes.
+7. Verify that **カテゴリ** block is in Top Page Layout. <br>
 	![Block Positioning](images/seasonal-item-block-position.PNG)
