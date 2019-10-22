@@ -19,9 +19,9 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 2. login မဝင်ရသေးရင် login ဝင်ပါ။
 3. create account နှိပ်လိုက်ပါ။ 
 4. account name ထည့်ပါ။ ကျန်တာဒီတိုင်းထားပြီး Next နှိပ်ပါ။<br>
- <img src="images/ga-setup-1.png">
+	<img src="images/ga-setup-1.png"><br>
 5. Web ကိုပဲထားပြီး Next နှိပ်ပါ။
- <img src="images/ga-setup-2.png">
+ 	<img src="images/ga-setup-2.png">
 6. Property Setup ရောက်ပါပြီ။
 	- Website Name: ကိုကြိုက်တာပေးပါ။
 	- Website URL: den-saku url ထည့်ပါ။ local ဆို 127.0.0.1 ဆိုပြီးပဲထည့်ပါ။
@@ -30,6 +30,6 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 	- Create နှိပ်ပါ။<br>
 7. Term of Service တွေ၊ User Agreement တွေကို Accpet လုပ်ပြီး အောက်ဆုံးက I Accept button ကိုနှိပ်ပါ။
 8. အောက်ပုံကျလာပါမယ်။ GA account တစ်ခုနဲ့ Property တစ်ခုတည်ဆောက်လို့ပြီးပါပြီ။ Tracking ID ကို Copy ကူးပြီး notepad ပေါ်ခဏတင်ထားလိုက်ပါ။
- <img src="images/ga-setup-4.png">
+	<img src="images/ga-setup-4.png">
 9. အပေါ်အစိမ်းရောင်အဝိုင်းကို select လုပ်ပြီး ကျွန်တော်တို့ GA အကောင့်တွေ Property တွေကို ပြောင်းကြည့်လို့ရပါတယ်။
 10. Google အကောင့်တစ်ခုအတွက် GA အကောင့် ၁၀ ခုရပါတယ်။ GA အကောင့် ၁ခုမှာ Property အခု 50 ရပါတယ်။
