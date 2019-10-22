@@ -273,6 +273,6 @@
 	```
 4. Navigate to **Contents** > **Layouts** > **トップページ用レイアウト**
 5. Drag and drop the newly created block into the main area:<br>
-	![Block Positioning](images/seasonal-item-block-position.PNG | width=500)
+	<img src="images/seasonal-item-block-position.PNG" width="700">	
 
 
