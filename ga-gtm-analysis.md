@@ -1,14 +1,18 @@
 # Densaku App တွင် Google Analytics(GA) နှင့် Google Tag Manager(GTM) ကိုအသုံးပြုခြင်း
 
-## မာတိကာ
+## <a id="content"></a>မာတိကာ
+- [Use Case Scenario](#use-case)
 - [သီအိုရီတွေးတောခြင်း](#theorycrafting)
-- [Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
+- [GA စတင်သုံးစွဲခြင်း](#ga-setup)
+- [GTM စတင်သုံးစွဲခြင်း](#gtm-setup)
+- [အသေးစိတ်စီမံခန့်ခွဲခြင်း](#detail-manage)
+	- [Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
 
 
 ## ကိုးကားစာများ
 https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 
-## Use Case Scenario
+## <a id="use-case">Use Case Scenario
 - Top Page View Count, Product List Page View Count နှင့် Product View Count တို့ကို code အတတ်နိုင်ဆုံးနည်းအောင်ရေး၍ လုပ်ရန်
 
 ## <a id="theorycrafting"></a>သီအိုရီတွေးတောခြင်း
@@ -19,7 +23,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 - Q: Page view count ကြည့်ဖို့ဆို GA တစ်ခုတည်းနဲ့ မလုံလောက်ဘူးလား? <br>
  A: လုံလောက်ပါတယ်။ ဒါပေမဲ့ Product view count အတွက်ကြတော့ product code နဲ့ product name ပါတွဲပြချင်တဲ့အတွက် website ကနေ customized data တွေပို့နိုင်ဖို့ရာ GTM ကိုသုံးရပါတယ်။
 
-## GA စတင်သုံးစွဲခြင်း
+## <a id="ga-setup">GA စတင်သုံးစွဲခြင်း
 1. analytics.google.com သို့သွားပါ။
 2. login မဝင်ရသေးရင် login ဝင်ပါ။
 3. create account နှိပ်လိုက်ပါ။ ဒီအကောင့်က GA account ကိုပြောတာဖြစ်ပါတယ်။
@@ -40,7 +44,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 9. အပေါ်အစိမ်းရောင်အဝိုင်းကို select လုပ်ပြီး ကျွန်တော်တို့ GA အကောင့်တွေ Property တွေကို ပြောင်းကြည့်လို့ရပါတယ်။
 10. Google အကောင့်တစ်ခုအတွက် GA အကောင့် ၁၀ ခုရပါတယ်။ GA အကောင့် ၁ခုမှာ Property အခု 50 ရပါတယ်။
 
-## GTM စတင်သုံးစွဲခြင်း
+## <a id="gtm-setup">GTM စတင်သုံးစွဲခြင်း
 
 1. https://tagmanager.google.com သို့သွားပါ။
 2. အကောင့်တစ်ခု အသစ်လုပ်ပါ။
@@ -62,7 +66,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 	<img src="images/gtm-setup-4.png">
 9. ဒါဆိုတော့ Setup ပြီးသွားပြီဖြစ်ပါတယ်။
 
-## အသေးစိတ်စီမံခန့်ခွဲခြင်း
+## <a id="detail-manage">အသေးစိတ်စီမံခန့်ခွဲခြင်း
 
 GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်။ Trigger, Variable နဲ့ Tag တွေပါ။ Web page element တွေရဲ့ event တွေကို trigger ကစောင့်ကြည့်ပါတယ်။ ကျွန်တော်တို့ တည်ဆောက်ထားတဲ့ trigger ရဲ့ကွင်းစက်ထဲဝင်လာပြီဆိုတာနဲ့ အဲ့ trigger တွေက ဆိုင်ရာဆိုင်ရာ Tag တွေကို Event data တွေ ပေးပို့လိုက်မှာဖြစ်ပါတယ်။ အဲ့ data တွေက variable အနေနဲ့ Tag ကတစ်ဆင့် Third party service တွေဖြစ်တဲ့ Google Analytics တို့လို server တွေကိုရောက်လာပါတယ်။ အဲ့ variable တွေမှာ သူမှတ်ထားတဲ့ default variable တွေအပြင် ကျွန်တော်တို့ကိုယ်တိုင်သတ်မှတ်ထားတဲ့ varible ကိုပါ ပို့လို့ရပါတယ်။ အဲ့ဒါနဲ့ ကျွန်တော်တို့ဟာ Product data တွေကို ပို့မှာဖြစ်ပါတယ်။
 
