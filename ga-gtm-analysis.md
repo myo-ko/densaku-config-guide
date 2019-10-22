@@ -24,7 +24,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
  A: လုံလောက်ပါတယ်။ ဒါပေမဲ့ Product view count အတွက်ကြတော့ product code နဲ့ product name ပါတွဲပြချင်တဲ့အတွက် website ကနေ customized data တွေပို့နိုင်ဖို့ရာ GTM ကိုသုံးရပါတယ်။
 
 ## <a id="ga-setup">GA စတင်သုံးစွဲခြင်း
-1. analytics.google.com သို့သွားပါ။
+1. https://analytics.google.com သို့သွားပါ။
 2. login မဝင်ရသေးရင် login ဝင်ပါ။
 3. create account နှိပ်လိုက်ပါ။ ဒီအကောင့်က GA account ကိုပြောတာဖြစ်ပါတယ်။
 4. account name ထည့်ပါ။ ကျန်တာဒီတိုင်းထားပြီး Next နှိပ်ပါ။<br>
@@ -115,6 +115,7 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 16. ဘယ်ဘက်က navigation menu ကနေ Realtime > Events သို့သွားပါ။
 17. Event Category column အောက်မှာ ကျွန်တော်တို့ Tag ဆက်တင်ချိန်တုန်းက ပေးခဲ့တဲ့ Property တွေပါလာတာ တွေ့ပါလိမ့်မယ်။
 	<img src="images/product-list-tag-8.png">
+18. Tag ကအလုပ်လုပ်သွားပြီးဆိုရင် အဆင့် ၁၂ နေရာပြန်သွားပြီး Preview Mode ကိုပိတ်လိုက်လို့ရပါပြီ။
 
 
 
