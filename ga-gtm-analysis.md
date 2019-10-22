@@ -1,5 +1,9 @@
 # Densaku App တွင် Google Analytics(GA) နှင့် Google Tag Manager(GTM) ကိုအသုံးပြုခြင်း
 
+မာတိကာ
+### [Product List Page ကို စီမံခန့်ခွဲခြင်း] (#product-list-page-ကို-စီမံခန့်ခွဲခြင်း)
+
+
 ## ကိုးကားစာများ
 https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 
@@ -93,7 +97,7 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 	- ပြီးရင် အဆင့် ၃ တုန်းက လုပ်ခဲ့တဲ့ Trigger ကိုရွေးလိုက်ပါ။
 	- ပြီးရင် Save ကိုနှိပ်ပါ။
 7. Dashboard ရဲ့ ညာဘက်အပေါ်မှာ Submit button ကို နှိပ်လိုက်ပါ။
-8. ဘာမှမရေးဘဲ Publish button ကိုနှိပ်ပါ။
+8. ဘာမှမရေးဘဲ ညာဘက်အပေါ်မှာ Publish button ကိုနှိပ်ပါ။
 9. Continue ကို ထပ်နှိပ်ပါ။
 10. Version နံပါတ်အသစ်နဲ့ commit တစ်ခုပြီးသွားပါပြီ။
 11. Workspace tab ကိုပြန်သွားပါ။
