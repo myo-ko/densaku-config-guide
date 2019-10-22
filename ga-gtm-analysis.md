@@ -1,7 +1,8 @@
 # Densaku App တွင် Google Analytics(GA) နှင့် Google Tag Manager(GTM) ကိုအသုံးပြုခြင်း
 
-မာတိကာ
-[Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
+## မာတိကာ
+- [သီအိုရီတွေးတောခြင်း](#theorycrafting)
+- [Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
 
 
 ## ကိုးကားစာများ
@@ -10,7 +11,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 ## Use Case Scenario
 - Top Page View Count, Product List Page View Count နှင့် Product View Count တို့ကို code အတတ်နိုင်ဆုံးနည်းအောင်ရေး၍ လုပ်ရန်
 
-## သီအိုရီတွေးတောခြင်း
+## <a id="theorycrafting"></a>သီအိုရီတွေးတောခြင်း
 - Q: Google Analytics(GA) ဘာလဲ? ဘယ်လဲ? <br>
  A: GA ဆိုတာက website တွေရဲ့ အခြေအနေအမျိုးမျိုးကို လေ့လာစောင့်ကြည့်တဲ့ ဝန်ဆောင်မှုဖြစ်ပါတယ်။
 - Q: Google Tag Manager(GTM) ဘာလဲ? ဘယ်လဲ? <br>
@@ -65,7 +66,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 
 GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်။ Trigger, Variable နဲ့ Tag တွေပါ။ Web page element တွေရဲ့ event တွေကို trigger ကစောင့်ကြည့်ပါတယ်။ ကျွန်တော်တို့ တည်ဆောက်ထားတဲ့ trigger ရဲ့ကွင်းစက်ထဲဝင်လာပြီဆိုတာနဲ့ အဲ့ trigger တွေက ဆိုင်ရာဆိုင်ရာ Tag တွေကို Event data တွေ ပေးပို့လိုက်မှာဖြစ်ပါတယ်။ အဲ့ data တွေက variable အနေနဲ့ Tag ကတစ်ဆင့် Third party service တွေဖြစ်တဲ့ Google Analytics တို့လို server တွေကိုရောက်လာပါတယ်။ အဲ့ variable တွေမှာ သူမှတ်ထားတဲ့ default variable တွေအပြင် ကျွန်တော်တို့ကိုယ်တိုင်သတ်မှတ်ထားတဲ့ varible ကိုပါ ပို့လို့ရပါတယ်။ အဲ့ဒါနဲ့ ကျွန်တော်တို့ဟာ Product data တွေကို ပို့မှာဖြစ်ပါတယ်။
 
-### <a name="manage-product-list"></a>Product List Page ကို စီမံခန့်ခွဲခြင်း
+### <a id="manage-product-list"></a>Product List Page ကို စီမံခန့်ခွဲခြင်း
 
 1. GTM Dashboard ကနေ Triggers ကို သွားလိုက်ပါ။
 	<img src="images/product-list-tag-1.png">
