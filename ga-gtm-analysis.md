@@ -29,6 +29,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
  - Reporting Time Zone: real site အတွက် Japan ရွေးပါ။ local ဆို Myanmar time ပဲရွေးလိုက်ပါ။
  - Create နှိပ်ပါ။
  <img src="images/ga-setup-3.png">
+ 
 7. Term of Service တွေ၊ User Agreement တွေကို Accpet လုပ်ပြီး အောက်ဆုံးက I Accept button ကိုနှိပ်ပါ။
 8. အောက်ပုံကျလာပါမယ်။ GA account တစ်ခုနဲ့ Property တစ်ခုတည်ဆောက်လို့ပြီးပါပြီ။ Tracking ID ကို Copy ကူးပြီး notepad ပေါ်ခဏတင်ထားလိုက်ပါ။
  <img src="images/ga-setup-4.png">
