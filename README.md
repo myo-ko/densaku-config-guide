@@ -1,1 +1,1 @@
-Visit the **.md** files to view step by step
+Visit the **.md** files to view step by step setup
