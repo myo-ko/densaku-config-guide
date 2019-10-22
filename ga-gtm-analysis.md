@@ -36,6 +36,7 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 10. Google အကောင့်တစ်ခုအတွက် GA အကောင့် ၁၀ ခုရပါတယ်။ GA အကောင့် ၁ခုမှာ Property အခု 50 ရပါတယ်။
 
 ## GTM စတင်သုံးစွဲခြင်း
+
 1. https://tagmanager.google.com သို့သွားပါ။
 2. အကောင့်တစ်ခု အသစ်လုပ်ပါ။
 3. အောက်ပါပုံနဲ့တူတဲ့ Form တစ်ခုရလာပြီဆို data ဖြည့်ပါ။
@@ -57,5 +58,55 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 9. ဒါဆိုတော့ Setup ပြီးသွားပြီဖြစ်ပါတယ်။
 
 ## အသေးစိတ်စီမံခန့်ခွဲခြင်း
+
+GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်။ Trigger, Variable နဲ့ Tag တွေပါ။ Web page element တွေရဲ့ event တွေကို trigger ကစောင့်ကြည့်ပါတယ်။ ကျွန်တော်တို့ တည်ဆောက်ထားတဲ့ trigger ရဲ့ကွင်းစက်ထဲဝင်လာပြီဆိုတာနဲ့ အဲ့ trigger တွေက ဆိုင်ရာဆိုင်ရာ Tag တွေကို Event data တွေ ပေးပို့လိုက်မှာဖြစ်ပါတယ်။ အဲ့ data တွေက variable အနေနဲ့ Tag ကတစ်ဆင့် Third party service တွေဖြစ်တဲ့ Google Analytics တို့လို server တွေကိုရောက်လာပါတယ်။ အဲ့ variable တွေမှာ သူမှတ်ထားတဲ့ default variable တွေအပြင် ကျွန်တော်တို့ကိုယ်တိုင်သတ်မှတ်ထားတဲ့ varible ကိုပါ ပို့လို့ရပါတယ်။ အဲ့ဒါနဲ့ ကျွန်တော်တို့ဟာ Product data တွေကို ပို့မှာဖြစ်ပါတယ်။
+
+### Product List Page ကို စီမံခန့်ခွဲခြင်း
+
+1. GTM Dashboard ကနေ Triggers ကို သွားလိုက်ပါ။
+	<img src="images/product-list-tag-1.png">
+2. New button ကိုနှိပ်ပြီး Trigger အသစ်လုပ်လိုက်ပါ။
+3. အောက်ပါအတိုင်း Setting ပေးလိုက်ပါ။
+	- Trigger နာမည်ကို ကြိုက်တာပေးပါ။
+	- Trigger Type: Page View
+	- This trigger fires on: Some Page Views
+	- Page Path: contains: products/list
+	- Save ကိုနှိပ်ပါ။
+	<img src="images/product-list-tag-2.png">
+4. GTM Dashboard ကနေ Tags ကို သွားလိုက်ပါ။
+5. New button ကို နှိပ်လိုက်ပါ။
+6. အောက်ပါအတိုင်း Setting ပေးလိုက်ပါ။
+	- Tag နာမည်ကို ကြိုက်တာပေးပါ။
+	- Tag Configuration အောက်က Icon ဝိုင်းဝိုင်းကို နှိပ်ပါ။
+		<img src="images/product-list-tag-3.png">
+	- Google Analytics: Universal Analytics ကိုရွေးပါ။
+	- Track Type: Event ကိုရွေးလိုက်ပါ။
+	- Category: **ဒီမှာ ကျွန်တော်ကတော့ page action ကိုရေးလိုက်ပါတယ်။ ဒီစာသားအတိုင်း GA မှာသွားပေါ်တာဖြစ်လို့ ဒီမှာ အသေအချာရေးရပါမယ်။ Production site ရောက်ရင်တော့ Japan လို description ရေးမှာဖြစ်ပါတယ်။ လောလောဆယ်တော့ English လိုပဲ ရေးထားလိုက်ပါတယ်။**
+		<img src="images/product-list-tag-4.png">
+	- Action: အဆင့် ၅ အတိုင်းပါပဲ။ လောလောဆယ်တော့ Product List view ဆိုပြီးပဲ ရေးထားပါတယ်။
+	- Label, value, non-interaction hit တွေကို ဒီတိုင်းပဲထားပါမယ်။
+	- Google Analytics Settings: မှာ New variable ဆိုတာကို ရွေးလိုက်ပါ။ Dialog ထပ်ထွက်လာပါမယ်။
+		<img src="images/product-list-tag-5.png">
+	- Variable name ကိုအဆင်ပြေတာပေးပါ။ ပြီးရင် Google Analytics ကို စတင်သုံးစွဲတုန်းက **Tracking ID** ကိုထည့်ပေးရမှာဖြစ်ပါတယ်။
+	- ပြီးရင် Save ကိုနှိပ်ပါ။
+	- Triggering အောက်က Icon ဝိုင်းဝိုင်းကို နှိပ်ပါ။ 
+	- ပြီးရင် အဆင့် ၃ တုန်းက လုပ်ခဲ့တဲ့ Trigger ကိုရွေးလိုက်ပါ။
+	- ပြီးရင် Save ကိုနှိပ်ပါ။
+7. Dashboard ရဲ့ ညာဘက်အပေါ်မှာ Submit button ကို နှိပ်လိုက်ပါ။
+8. ဘာမှမရေးဘဲ Publish button ကိုနှိပ်ပါ။
+9. Continue ကို ထပ်နှိပ်ပါ။
+10. Version နံပါတ်အသစ်နဲ့ commit တစ်ခုပြီးသွားပါပြီ။
+11. Workspace tab ကိုပြန်သွားပါ။
+12. Dashboard ရဲ့ ညာဘက်အပေါ်မှာ Preview button ကို နှိပ်လိုက်ပါ။ Tag manager ရဲ့ Debug mode ရောက်နေပါပြီ။
+	<img src="images/product-list-tag-6.png">
+13. Browser Tab အသစ်ဖွင့်ပြီး `localhost/densaku/products/list` ဆိုပြီးရိုက်ထည့်ကြည့်ပါ။
+14. အောက်ကလို Tag Manager ဆိုပြီး debug panel ကျလာပါတယ်။ အဲ့မှာ Page ရဲ့ ဘယ်အချိန်မှာ ဘယ် Tag တွေ Fire ဖြစ်သွားသလဲဆိုတာတွေ့ရမှာပါ။
+	<img src="images/product-list-tag-7.png">
+15. https://analytics.google.com သို့သွားပါ။
+16. ဘယ်ဘက်က navigation menu ကနေ Realtime > Events သို့သွားပါ။
+17. Event Category column အောက်မှာ ကျွန်တော်တို့ Tag ဆက်တင်ချိန်တုန်းက ပေးခဲ့တဲ့ Property တွေပါလာတာ တွေ့ပါလိမ့်မယ်။
+	<img src="images/product-list-tag-8.png">
+
+
 
 
