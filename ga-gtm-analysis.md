@@ -44,6 +44,8 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 9. အပေါ်အစိမ်းရောင်အဝိုင်းကို select လုပ်ပြီး ကျွန်တော်တို့ GA အကောင့်တွေ Property တွေကို ပြောင်းကြည့်လို့ရပါတယ်။
 10. Google အကောင့်တစ်ခုအတွက် GA အကောင့် ၁၀ ခုရပါတယ်။ GA အကောင့် ၁ခုမှာ Property အခု 50 ရပါတယ်။
 
+[မာတိကာသို့ ->](#content)
+
 ## <a id="gtm-setup">GTM စတင်သုံးစွဲခြင်း
 
 1. https://tagmanager.google.com သို့သွားပါ။
@@ -66,11 +68,13 @@ https://www.orbitmedia.com/blog/what-is-google-tag-manager-and-why-use-it/
 	<img src="images/gtm-setup-4.png">
 9. ဒါဆိုတော့ Setup ပြီးသွားပြီဖြစ်ပါတယ်။
 
+[မာတိကာသို့ ->](#content)
+
 ## <a id="detail-manage">အသေးစိတ်စီမံခန့်ခွဲခြင်း
 
 GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်။ Trigger, Variable နဲ့ Tag တွေပါ။ Web page element တွေရဲ့ event တွေကို trigger ကစောင့်ကြည့်ပါတယ်။ ကျွန်တော်တို့ တည်ဆောက်ထားတဲ့ trigger ရဲ့ကွင်းစက်ထဲဝင်လာပြီဆိုတာနဲ့ အဲ့ trigger တွေက ဆိုင်ရာဆိုင်ရာ Tag တွေကို Event data တွေ ပေးပို့လိုက်မှာဖြစ်ပါတယ်။ အဲ့ data တွေက variable အနေနဲ့ Tag ကတစ်ဆင့် Third party service တွေဖြစ်တဲ့ Google Analytics တို့လို server တွေကိုရောက်လာပါတယ်။ အဲ့ variable တွေမှာ သူမှတ်ထားတဲ့ default variable တွေအပြင် ကျွန်တော်တို့ကိုယ်တိုင်သတ်မှတ်ထားတဲ့ varible ကိုပါ ပို့လို့ရပါတယ်။ အဲ့ဒါနဲ့ ကျွန်တော်တို့ဟာ Product data တွေကို ပို့မှာဖြစ်ပါတယ်။
 
-### <a id="manage-product-list"></a>Product List Page ကို စီမံခန့်ခွဲခြင်း
+### <a id="manage-product-list"></a>Product List View Count ကို စီမံခန့်ခွဲခြင်း
 
 1. GTM Dashboard ကနေ Triggers ကို သွားလိုက်ပါ။
 	<img src="images/product-list-tag-1.png">
@@ -117,9 +121,64 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 	<img src="images/product-list-tag-8.png">
 18. Tag ကအလုပ်လုပ်သွားပြီးဆိုရင် အဆင့် ၁၂ နေရာပြန်သွားပြီး Preview Mode ကိုပိတ်လိုက်လို့ရပါပြီ။
 
-[မာတိကာသို့](#content)
+[မာတိကာသို့ ->](#content)
 
-### 
+### <a id="product-detail-manage"></a>Product Detail View Count ကိုစီမံခန့်ခွဲခြင်း
+
+1. Google Tag Manager ရဲ့ Variables menu သို့သွားပါ။
+2. User-Defined Variables အပိုင်းထဲက New Button ကိုနှိပ်ပါ။
+3. ပေါ်လာတဲ့ Dialog မှာ Variable name တစ်ခုပေးပါ။ လောလောဆယ်ကတော့ product name အတွက်လုပ်မှာဖြစ်တဲ့အတွက် **dlv - productName** ဆိုပြီးပဲ ထားလိုက်ကြရင်ကောင်းပါတယ်။ Variable Configuration အောက်က Icon ဝိုင်းဝိုင်းကို နှိပ်ပါ။
+	<img src="images/product-detail-tag-1.png">
+4. Data Layer Variable ဆိုတာကိုရွေးပါ။
+	<img src="images/product-detail-tag-2.png">
+5. Data Layer Vaiable Name မှာ **product.productName** ဆိုပြီးပေးပါ။ ဒီမှာ ကိုကြိုက်တာပေးလို့ရပေမဲ့ ဒီ Variable က Product Name အတွက်လုပ်တာဖြစ်တဲ့အတွက် အထက်ပါအတိုင်းပဲထားလိုက်ပါ။
+6. ပြီးသွားရင် Variable က ဒီလိုပုံအတိုင်းဖြစ်နေရပါမယ်။
+	<img src="images/product-detail-tag-3.png">
+7. အဆင့် ၂ ကနေ ၆ လိုမျိုးပဲ User-Defined Variable အသစ်ထပ်လုပ်ပါ။ ဒီတစ်ခါတော့ product code အတွက်ဖြစ်ပါတယ်။ Name ကို **dlv - productCode** လို့ပေးပြီး Data Layer Variable Name ကိုတော့ **product.productCode** လို့ပေးထားပါ။
+	<img src="images/product-detail-tag-4.png">
+8. Trigger တစ်ခုအသစ်ထပ်လုပ်ပါမယ်။ အပေါ်မှာပါပြီးသားဖြစ်တဲ့အတွက် ထပ်အသေးစိတ်မပြောတော့ပါဘူး။ ထည့်ရမယ် Settings တွေပဲ ပြောပါမယ်။
+	- Trigger Name: ကြိုက်တာပေးပါ။ ဒီမှာတော့ product detail view count ဖြစ်တဲ့အတွက် Product Detail Page View Trigger လို့ပဲ ပေးထားပါတယ်။
+	- Trigger Type: Window Loaded
+	- This trigger fires on: Some Window Loaded Events
+	- Page Path: contains: /products/detail
+	<img src="images/product-detail-tag-5.png">
+9. Tag တစ်ခုအသစ်ထပ်လုပ်ပါမယ်။ အပေါ်မှာပါပြီးသားဖြစ်တဲ့အတွက် ထပ်အသေးစိတ်မပြောတော့ပါဘူး။ ထည့်ရမယ် Settings တွေပဲ ပြောပါမယ်။
+	- Tag Name: ကြိုက်တာပေးပါ။ ဒီမှာတော့ product detail view count ဖြစ်တဲ့အတွက် Product Detail Page View Tag လို့ပဲ ပေးထားပါတယ်။
+	- Tag Type: Google Analytics: Universal Analytics ကိုရွေးပါ။
+	- Track Type: Event 
+	- Category: **ဒီမှာ ကျွန်တော်ကတော့ Product Detail လို့ရေးလိုက်ပါတယ်။ ဒီစာသားအတိုင်း GA မှာသွားပေါ်တာဖြစ်လို့ ဒီမှာ အသေအချာရေးရပါမယ်။ Production site ရောက်ရင်တော့ Japan လို description ရေးမှာဖြစ်ပါတယ်။ လောလောဆယ်တော့ English လိုပဲ ရေးထားလိုက်ပါတယ်။**
+	- Action: **View {{dlv - productCode}} - {{dlv - productName}}** တွန့်ကွင်း ၂ ထပ်ထဲက Variable name ကိုမှတ်မိကြမှာပါ။ အဲ့ဒါတွေက အဆင့် ၁ ကနေ ၇ အထိလုပ်ခဲ့တဲ့ variable တွေပါပဲ။ ဒီ tag ကတစ်ဆင့် ကျွန်တော်တို့ဟာ GA မှာ product information တွေကို ရမှာဖြစ်ပါတယ်။ Production site ရောက်ရင်တော့ Japan လို description ရေးမှာဖြစ်ပါတယ်။ လောလောဆယ်တော့ English လိုပဲ ရေးထားလိုက်ပါတယ်။
+	- Google Analytics Settings: ဒီမှာဆိုရင် drop down ကိုနှိပ်ပြီး ရှိပြီးသား Google Analytics Varaible ကို ရွေးပေးလိုက်ရုံပါပဲ။ *(အပေါ်အပိုင်းတုန်းက ကျွန်တော်တို့က create လုပ်ပြီးသားဖြစ်လို့ပါ။)*
+	- Firing Triggers: ဒီမှာတော့ အဆင့် ၈ တုန်းက လုပ်ခဲ့တဲ့ Trigger ကို ချိတ်ပေးရပါမယ်။
+10. Tag သည်အောက်ကပုံလို setting ချိန်ထားရပါမယ်။
+	<img src="images/product-detail-tag-6.png">
+11. ကျွန်တော်တို့ရဲ့ variable တွေကို JavaScript နဲ့ data ထည့်ပါ‌ောာ့မယ်။ အဲ့အတွက် Den-saku ရဲ့ အက်မင်ပန်နယ်ကိုသွားပါ။ Contents > Pages > 商品詳細ページ ကို ရှာပြီး Edit လုပ်ပါ။ 
+12. `{% block javascript %}` နောက်ကဆက်ပြီး အောက်က script လေးထည့်ပါမယ်။ *(Line no.95 လောက်ကျပါမယ်)*
+	```
+	<script>
+		$(document).ready(function() {
+		dataLayer.push({
+			'product': {
+				'productId': {{ Product.id }},
+				'productCode': '{{ Product.code_min }}',
+				'productName': '{{ Product.name }}'
+			}
+		});
+		});        
+	</script>
+	```
+13. အောက်ပါအတိုင်း ဖြစ်ပါတယ်။
+	<img src="images/product-detail-tag-7.png">
+14. ပြီးရင် Google Tag Manager မှာ Submit > Publish > Preview လုပ်ထားလိုက်ပါ။
+15. Densaku app မှာ product တစ်ခုကို detail သွားကြည့်လိုက်ပါ။
+16. Tag fire ဖြစ်သွားကြောင်း Tag manager ရဲ့ debug panel မှာ ပေါ်နေပါမယ်။ 
+	<img src="images/product-detail-tag-8.png">
+17. Debug window မှာ Variable Tab ကိုဖွင့်ပြီးတော့ ကျွန်တော်တို့ရဲ့ variable ထဲမှာ ဘာ value တွေပါသွားသလဲဆိုတာကိုပါ ကြည့်နိုင်ပါတယ်။
+	<img src="images/product-detail-tag-9.png">
+18. Google Analytics ရဲ့ Realtime -> Events မှာသွားကြည့်လိုက်ရင် အခုလိုမြင်ရပါလိမ့်မယ်။
+	<img src="images/product-detail-tag-10.png">
+19. ဒါဆိုရင် product detail view count ကို ကြည့်လို့ရသွားပါပြီ။ အလုပ်လုပ်ပုံကတော့ GTM မှာ user-defined variable များဟာ ကျွန်တော်တို့ရဲ့ app ထဲမှာ `dataLayer` ဆိုတဲ့ array ရဲ့ element တွေပဲဖြစ်ပါတယ်။ ဒီ array ကပဲ GTM ကတစ်ဆင့် GA ကိုရောက်ရှိလာတာဖြစ်ပါတယ်။
+
 
 
 
