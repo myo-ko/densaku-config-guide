@@ -1,4 +1,4 @@
-# Added Picked-up Products and Gifted Products Pages
+# Pick-up Prodcuts နှင့် Gift Products Page များတည်ဆောက်ခြင်း
 ## Pick-up Products
 1. Admin Panel ကနေ အောက်ပါ Tag ၂ ခုအသစ်ဆောက်ပါ။ Pick-up **(ピックアップ)** နဲ့ Gift **(お中元　お歳暮)**.
  လက်သည်းကွင်းထဲက ဂျပန်စာလုံးတွေကိုပဲ အသုံးပြုပါ။
