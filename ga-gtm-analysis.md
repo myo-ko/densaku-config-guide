@@ -201,7 +201,7 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 4. ကျန်တာတွေ ဒီတိုင်းပဲထားပြီး Save လိုက်ပါ။
 5. Report ကျလာရင် ကိုလိုချင်တဲ့ Date ရွေးပြီး ကြည့်နိုင်ပါပြီ။
 	<img src="images/custom-report-3.png">
-6. Event Category က Product Category ကို နှိပ်ပြီး ဘယ် product ကို ဘယ်နှခေါက်ကြည့်လဲဆိုတာပါ ပြပေးပါတယ်။
+6. Event Category က Product Detail ကို နှိပ်ပြီး ဘယ် product ကို ဘယ်နှခေါက်ကြည့်လဲဆိုတာပါ ပြပေးပါတယ်။
 	<img src="images/custom-report-4.png">
 7. စာကြွင်း - GA ရဲ့ report data က ချက်ချင်း refresh မဖြစ်ပါဘူး။ တစ်နာရီကနေ ၄၈ နာရီအထိ ကြာတတ်ပါတယ်။ Realtime ကပဲ အခုဖြစ်နေတာတွေကို ပြနိုင်တာပါ။
 
