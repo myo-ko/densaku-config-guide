@@ -8,6 +8,7 @@
 - [အသေးစိတ်စီမံခန့်ခွဲခြင်း](#detail-manage)
 	- [Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
 	- [Product Detail View Count ကိုစီမံခန့်ခွဲခြင်း](#product-detail-manage)
+	- [GA တွင် Custom Report တစ်ခုဖန်တီးခြင်း](#ga-custom-report)
 
 
 ## ကိုးကားစာများ
@@ -181,5 +182,27 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 19. ဒါဆိုရင် product detail view count ကို ကြည့်လို့ရသွားပါပြီ။ အလုပ်လုပ်ပုံကတော့ GTM မှာ user-defined variable များဟာ ကျွန်တော်တို့ရဲ့ app ထဲမှာ `dataLayer` ဆိုတဲ့ array ရဲ့ element တွေပဲဖြစ်ပါတယ်။ ဒီ array ကပဲ GTM ကတစ်ဆင့် GA ကိုရောက်ရှိလာတာဖြစ်ပါတယ်။
 
 [မာတိကာသို့ ->](#content)
+
+### <a id="ga-custom-report"></a>GA တွင် Custom Report တစ်ခုဖန်တီးခြင်း
+
+လက်ရှိအချိန်အထိ GA မှာ ကျွန်တော်တို့ဟာ realtime ဖြစ်နေတဲ့ event တွေကိုပဲ ကြည့်ခဲ့ကြတာဖြစ်ပါတယ်။ Date range ရွေးပြီး ဒီရက်ကနေ ဒီရက်အထိ event တွေ ပြန်ကြည့်ဖို့အတွက်ကျတော့ Custom report တစ်ခုဖန်တီးပေးရပါမယ်။
+1. Google Analytics ကိုသွားပြီး menu ကနေ Customization > Custom Reports ကိုရွေးလိုက်ပါ။
+2. New Custom Report ကိုနှိပ်ပါ။
+	<img src="images/custom-report-1.png">
+3. အောက်ပါအတိုင်း setting ပေးပါ။
+	- Title: ကြိုက်တာပေးပါ။
+	- Metric Groups: Users + Unique Events + Page/Sessions + Avg. Session Duration
+	- Dimension Drilldowns: Event Category > Event Action > Page > Event Label
+	<img src="images/custom-report-2.png">
+	```
+	ဒီနေရာမှာ Metric groups တို့မှာ ရွေးနိုင်တဲ့ field တွေဟာ GA မှာပါတဲ့ field တွေဖြစ်ပါတယ်။ ဒီဟာတွေနဲ့ ကိုလိုချင်သလို Report တည်ဆောက်နိုင်ပါတယ်။ GA ရဲ့ data ဟာ relational data မဟုတ်ပါဘူး။ multi-dimensional data ပါ။
+	```
+4. ကျန်တာတွေ ဒီတိုင်းပဲထားပြီး Save လိုက်ပါ။
+5. Report ကျလာရင် ကိုလိုချင်တဲ့ Date ရွေးပြီး ကြည့်နိုင်ပါပြီ။
+	<img src="images/custom-report-3.png">
+6. Event Category က Product Category ကို နှိပ်ပြီး ဘယ် product ကို ဘယ်နှခေါက်ကြည့်လဲဆိုတာပါ ပြပေးပါတယ်။
+	<img src="images/custom-report-4.png">
+7. စာကြွင်း - GA ရဲ့ report data က ချက်ချင်း refresh မဖြစ်ပါဘူး။ တစ်နာရီကနေ ၄၈ နာရီအထိ ကြာတတ်ပါတယ်။ Realtime ကပဲ အခုဖြစ်နေတာတွေကို ပြနိုင်တာပါ။
+
 
 
