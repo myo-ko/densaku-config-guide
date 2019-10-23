@@ -7,6 +7,7 @@
 - [GTM စတင်သုံးစွဲခြင်း](#gtm-setup)
 - [အသေးစိတ်စီမံခန့်ခွဲခြင်း](#detail-manage)
 	- [Product List Page ကို စီမံခန့်ခွဲခြင်း](#manage-product-list)
+	- [Product Detail View Count ကိုစီမံခန့်ခွဲခြင်း](#product-detail-manage)
 
 
 ## ကိုးကားစာများ
@@ -179,6 +180,6 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 	<img src="images/product-detail-tag-10.png">
 19. ဒါဆိုရင် product detail view count ကို ကြည့်လို့ရသွားပါပြီ။ အလုပ်လုပ်ပုံကတော့ GTM မှာ user-defined variable များဟာ ကျွန်တော်တို့ရဲ့ app ထဲမှာ `dataLayer` ဆိုတဲ့ array ရဲ့ element တွေပဲဖြစ်ပါတယ်။ ဒီ array ကပဲ GTM ကတစ်ဆင့် GA ကိုရောက်ရှိလာတာဖြစ်ပါတယ်။
 
-
+[မာတိကာသို့ ->](#content)
 
 
