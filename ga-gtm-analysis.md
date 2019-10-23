@@ -194,9 +194,9 @@ GTM မှာ အပိုင်း ၃ ပိုင်းပါပါတယ်�
 	- Metric Groups: Users + Unique Events + Page/Sessions + Avg. Session Duration
 	- Dimension Drilldowns: Event Category > Event Action > Page > Event Label
 	<img src="images/custom-report-2.png">
-    ```
-    ဒီနေရာမှာ Metric groups တို့မှာ ရွေးနိုင်တဲ့ field တွေဟာ GA မှာပါတဲ့ field တွေဖြစ်ပါတယ်။ ဒီဟာတွေနဲ့ ကိုလိုချင်သလို Report တည်ဆောက်နိုင်ပါတယ်။ GA ရဲ့ data ဟာ relational data မဟုတ်ပါဘူး။ multi-dimensional data ပါ။
-    ```
+
+    > ဒီနေရာမှာ Metric groups တို့မှာ ရွေးနိုင်တဲ့ field တွေဟာ GA မှာပါတဲ့ field တွေဖြစ်ပါတယ်။ ဒီဟာတွေနဲ့ ကိုလိုချင်သလို Report တည်ဆောက်နိုင်ပါတယ်။ GA ရဲ့ data ဟာ relational data မဟုတ်ပါဘူး။ multi-dimensional data ပါ။
+
 4. ကျန်တာတွေ ဒီတိုင်းပဲထားပြီး Save လိုက်ပါ။
 5. Report ကျလာရင် ကိုလိုချင်တဲ့ Date ရွေးပြီး ကြည့်နိုင်ပါပြီ။
 	<img src="images/custom-report-3.png">
