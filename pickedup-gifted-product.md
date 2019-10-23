@@ -1,15 +1,15 @@
 # Added Picked-up Products and Gifted Products Pages
 ## Pick-up Products
-1. Create 2 new product tags: Pick-up **(ピックアップ)** and Gift **(お中元　お歳暮)**.
- Use the Japanese characters only.
-2. Link products with the tags. *(optional)*
-3. Navigate to **Contents** > **Pages**
-4. Create a new page.
+1. Admin Panel ကနေ အောက်ပါ Tag ၂ ခုအသစ်ဆောက်ပါ။ Pick-up **(ピックアップ)** နဲ့ Gift **(お中元　お歳暮)**.
+ လက်သည်းကွင်းထဲက ဂျပန်စာလုံးတွေကိုပဲ အသုံးပြုပါ။
+2. Product တွေကို ဆိုင်ရာ Tag တွေနဲ့ချိတ်ပါ။ *(optional)*
+3. **Contents** > **Pages** သို့သွားပါ။
+4. Page တစ်ခု အသစ်ဆောက်ပါ။
     - Page Name: Picked Up (ピックアップ) Page
     - URL: pick_up
     - File Name: pick_up
-5. Add the following code:
-	```
+5. အောက်ပါကုဒ်များထည့်ပါ။
+	```Twig
 	{% set query = repository('Eccube\\Entity\\Product').createQueryBuilder('p').innerJoin('p.ProductTag','pt').innerJoin('pt.Tag','t').where('t.name = :tag').andWhere('p.Status = 1').setParameter('tag', 'ピックアップ').getQuery() %}
 	{% set products = query.getResult() %}
 
@@ -42,18 +42,18 @@
 
 	{% endblock %}
 	```
-6. Select the **下層ページ用レイアウト** in Layout Setting -> PC.
-7. Leave others as default.
-8. Save.
+6. Layout Setting -> PC မှာတော့ **下層ページ用レイアウト** ဆိုတာကိုရွေးရပါမယ်။
+7. တခြားဟာတွေကိုတော့ ဒီတိုင်းပဲထားပါ။
+8. Save လိုက်ပါ။
 
 ## Gift Products
-1. Navigate to **Contents** > **Pages**
-2. Create a new page.
+1. **Contents** > **Pages** သို့သွားပါ။
+2. Page တစ်ခု အသစ်ဆောက်ပါ။
     - Page Name: Gift (お中元　お歳暮) Page
 	- URL: gift
 	- File Name: gift
-3. Add the following code:
-	```
+3. အောက်ပါကုဒ်များထည့်ပါ။
+	```Twig
 	{% set tag = 'お中元　お歳暮' %}
 	{% set query = repository('Eccube\\Entity\\Product').createQueryBuilder('p').innerJoin('p.ProductTag','pt').innerJoin('pt.Tag','t').where('t.name = :tag').andWhere('p.Status = 1').setParameter('tag', tag).getQuery() %}
 	{% set products = query.getResult() %}
@@ -87,19 +87,19 @@
 
 	{% endblock %}
 	```
-4. Select the **下層ページ用レイアウト** in Layout Setting -> PC.
-5. Leave others as default.
-6. Save.
+4. Layout Setting -> PC မှာတော့ **下層ページ用レイアウト** ဆိုတာကိုရွေးရပါမယ်။
+5. တခြားဟာတွေကိုတော့ ဒီတိုင်းပဲထားပါ။
+6. Save လိုက်ပါ။
 
-## Generating URL for the 2 pages
-1. Navigate to **Contents** > **Blocks**.
-2. Find the block with name **カテゴリ**.
-3. There should be an `<a>` element around line 39 or 44. *(39 is pick-up products link and 44 is gift products link)*
-4. Modify their `href` attribute as follows:
+## Page အသစ် ၂ ခုအတွက် URL ထည့်ခြင်း
+1. **Contents** > **Blocks** သို့သွားပါ။
+2. **カテゴリ** ဆိုတဲ့ Block ကိုရှာပါ။ Edit လုပ်ပါ။
+3. Line no.39 နဲ့ 44 လောက်မှာ `<a>` element ရှိပါလိမ့်မယ်။ *(39 ကတော့ Pickup Product အတွက်ဖြစ်ပြီး 44 ကတော့ Gift Product အတွက်ဖြစ်ပါတယ်။)*
+4. `href` attribute ကိုတော့ အောက်ပါအတိုင်းပြင်ပါ။
     - Pick-up products link : `href="{{ url('user_data',{'route':'pick_up'}) }}"`
     - Gift products link : `href="{{ url('user_data',{'route':'gift'}) }}"`
-5. Full code:
-	```
+5. ကုဒ်အပြည့်အစုံ:
+	```Twig
 	{#
 	This file is part of EC-CUBE
 
@@ -161,6 +161,6 @@
 		</div>
 	</div>
 	```
-6. Save the changes.
-7. Verify that **カテゴリ** block is in Top Page Layout. <br>
+6. ပြီးသွားပြီဆို Save လိုက်ပါ။
+7. Top Page layout setting မှာ **カテゴリ** Block ရှိနေကြောင်း စစ်ဆေးပါ။<br>
 	![Block Positioning](images/seasonal-item-block-position.PNG)
