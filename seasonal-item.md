@@ -1,8 +1,8 @@
-## Adding seasonal items
-1. Create 4 new tags for products in **Products** > **Tags**<br>
-    Use Japanese Kanji character for seasons: 春 夏 秋 冬
-2. Link products with the tags
-3. Create a new content block with the following code:
+## Seasonal items ထည့်ခြင်း
+1. Admin panel ကနေ **Products** > **Tags** သို့သွားပြီး Tag ၄ ခုအသစ်ဆောက်ပါ။<br>
+    Season တွေအတွက် ဂျပန်စာလုံးတွေကိုပဲ သုံးပါ။ (春 夏 秋 冬)
+2. Products တွေကို အဲ့ဒီ Tag တွေနဲ့ချိတ်ပါ။ Product တစ်ခုကို Tag အများကြီးနဲ့ ချိတ်လို့ရပါတယ်။
+3. **Contents** > **Blocks** သို့သွားပြီး အောက်ပါကုဒ်များဖြင့် Block တစ်ခုအသစ်လုပ်ပါ။
 	```
 	{% 
 	set month = date('m').format('m')
@@ -271,8 +271,8 @@
 		</div>
 	</div>
 	```
-4. Navigate to **Contents** > **Layouts** > **トップページ用レイアウト**
-5. Drag and drop the newly created block into the main area:<br>
+4. **Contents** > **Layouts** > **トップページ用レイアウト** သို့သွားပါ။
+5. အသစ်လုပ်ထားတဲ့ Block ကို Main area ထဲဆွဲထည့်လိုက်ပါ။<br>
 	<img src="images/seasonal-item-block-position.PNG" style="border: 1px solid gray;">	
 
 

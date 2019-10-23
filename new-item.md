@@ -1,6 +1,6 @@
-## Adding latest items
-1. Edit an existing content block **新着商品** *(You can also crate new block if you don't want to mess with Eccube)*
-2. Clear and add the following code:
+## Latest items ထည့်သွင်းခြင်း
+1. Admin Panel ကနေ **Contents** > **Blocks** အောက်မှာ **新着商品** ဆိုတဲ့ Block ကို ပြင်ပါမယ်။ *(EC-Cube က default ပါတဲ့ block တွေကိုမထိချင်ဘူးဆို Block အသစ်လုပ်နိုင်ပါတယ်။)*
+2. ရှိပြီးသား code တွေကို ရှင်းပြီး အောက်ပါကုဒ်ကိုထည့်လိုက်ပါ။
 	```
 	{% 
 	set end = date()
@@ -249,5 +249,5 @@
 		</div>
 	</div>
 	```
-3. Go to Top Page setting and make sure the block is in the area
+3. Top Page setting ကိုသွားပြီးတော့ new item block ကို main area ထဲရောက်နေအောင်ထည့်ပါ။
 	![Block Positioning](images/seasonal-item-block-position.PNG)
