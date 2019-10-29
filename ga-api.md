@@ -3,7 +3,14 @@
 Google Analytics မှာ Report data တွေရလာပြီဆိုရင် အဲ့ data တွေကို ကျွန်တော်တို့ Laravel app ကနေ access လုပ်ကြပါမယ်။ <br>
 အဲ့အတွက်က GA ကို တိုက်ရိုက် access မရပါဘူး။ Google API Console ကမှပဲ access ရပါမယ်။ GAC ကတော့ Google service က data တွေကို အပြင် third-party တွေကနေ လှမ်းခေါ်လို့ရအောင် လုပ်ပေးတဲ့ service ဖြစ်ပါတယ်။
 
-## Google API Console ကို စတင်အသုံးပြုခြင်း
+## <a id="content"></a>မာတိကာ
+- [Google API Console ကို စတင်အသုံးပြုခြင်း](#gac-setup)
+- [Google Analytics တွင် Account ကို Permission ပေးခြင်း](#acc-permission)
+- [Laravel app နှင့်ချိတ်ဆက်ခြင်း](#laravel-int)
+- [Controller တွင်အသုံးပြုရန်](#using-in-controller)
+- [စာကြွင်း](#disclaimer)
+
+## <a id="gac-setup"></a>Google API Console ကို စတင်အသုံးပြုခြင်း
 
 1. https://console.developers.google.com သို့ သွားပါ။
 2. လိုအပ်တဲ့ setting များထည့်ပါ။ *(Optional)*
@@ -34,7 +41,7 @@ Google Analytics မှာ Report data တွေရလာပြီဆိုရ�
 13. ရွေးပြီးရင် Enable ဆိုတာကိုနှိပ်ပါ။
 	<img src="images/gac-setup-13.png">
 
-## Google Analytics တွင် Account ကို Permission ပေးခြင်း
+## <a id="acc-permission"></a> Google Analytics တွင် Account ကို Permission ပေးခြင်း
 
 1. https://analytics.google.com သို့သွားပါ။
 2. ဘယ်ဘက်အောက်နားမှာ Admin ဆိုတဲ့ button ကိုနှိပ်ပါ။ Account, Property မှန်မမှန်စစ်ဆေးပါ။ မှန်ပြီဆိုရင် User Management ဆိုတာကို နှိပ်ပါ။
@@ -48,7 +55,7 @@ Google Analytics မှာ Report data တွေရလာပြီဆိုရ�
 7. View ID ကို copy ကူးထားပါ။
 	<img src="images/gac-setup-14.png">
 
-## Laravel app နှင့်ချိတ်ဆက်ခြင်း
+## <a id="laravel-int"></a>Laravel app နှင့်ချိတ်ဆက်ခြင်း
 
 1. ဒီအဆင့်ရောက်ရင်တော့ အထက်ကနေလုပ်ခဲ့ကြတဲ့ JOSN ဖိုင်နဲ့ View ID က ready ဖြစ်နေရပါမယ်။ *(ပထမပိုင်း အဆင့် ၉ နှင့် ဒုတိယပိုင်း အဆင့် ၇)*
 2. ကျွန်တော်တို့က https://github.com/spatie/laravel-analytics ဆိုတဲ့ package ကိုသုံးမှာဖြစ်ပါတယ်။
@@ -95,11 +102,11 @@ Google Analytics မှာ Report data တွေရလာပြီဆိုရ�
 10. Download ဆွဲထားတဲ့ JSON ဖိုင်ကို `service-account-credentials.json` သို့ rename လုပ်ပြီး အထက်ပါ folder အောက်မှာ သွားထည့်လိုက်ပါ။
 11. ဒါဆိုရင်တော့ ချိတ်ပြီးသွားပြီဖြစ်ပါတယ်။
 
-## Controller တွင်အသုံးပြုရန်
+## <a id="using-in-controller"></a>Controller တွင်အသုံးပြုရန်
 
 `AdminStatisticsController.php` ကို Reference လုပ်ပါ။
 
-## စာကြွင်း
+## <a id="disclaimer"></a>စာကြွင်း
 
 - Query parameter များကို အောက်ပါလင့်မှာ စမ်းသပ်အသုံးပြုနိုင်ပါတယ်။ <br>
 	https://ga-dev-tools.appspot.com/query-explorer/
