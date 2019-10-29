@@ -2,21 +2,12 @@
 1. Admin Panel ကနေ **Contents** > **Blocks** အောက်မှာ **新着商品** ဆိုတဲ့ Block ကို ပြင်ပါမယ်။ *(EC-Cube က default ပါတဲ့ block တွေကိုမထိချင်ဘူးဆို Block အသစ်လုပ်နိုင်ပါတယ်။)*
 2. ရှိပြီးသား code တွေကို ရှင်းပြီး အောက်ပါကုဒ်ကိုထည့်လိုက်ပါ။
 	```Twig
-	{% 
-	set end = date()
-	%}
-	{%
-	set start = date()
-	%}
-	{% set start = start.modify('-1 month') %}
 	{%
 	set query = repository('Eccube\\Entity\\Product')
 					.createQueryBuilder('p')
-					.where('p.create_date BETWEEN :start AND :end')
-					.andWhere('p.Status = 1')
-					.setParameter('start', start.format('Y-m-d'))
-					.setParameter('end', end.format('Y-m-d'))
-					.orderBy('p.create_date', 'DESC')
+					.where('p.Status = 1')
+					.orderBy('p.update_date', 'DESC')
+					.setMaxResults(20)
 					.getQuery()
 	%}
 	{% set latest_products = query.getResult() %}
