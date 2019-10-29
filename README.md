@@ -4,3 +4,4 @@ Visit the **.md** files to view step by step setup
 - [New Product ထည့်ပုံ](new-item.md)
 - [Pickup Products Page နှင့် Gift Products Page ထည့်ပုံ](pickedup-gifted-product.md)
 - [Google Analytics နှင့် Google Tag Manager တို့ကိုအသုံးပြုပုံ](ga-gtm-analysis.md)
+- [Google API Console အသုံးပြု၍ Google Analytics နှင့် ချိတ်ဆက်ခြင်း](ga-api.md)
